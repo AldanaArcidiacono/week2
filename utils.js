@@ -1,7 +1,5 @@
 // // Declarar una funcion
 // function foo() {}
-// // Asignar
-// const lar = function () {}
 
 // Otra maneta de export
 // export function bar() {

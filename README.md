@@ -1,2 +1,3 @@
-# week2
+# Learning JavaScript
+
 Week 2 of bootcamp

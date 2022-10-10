@@ -5,10 +5,12 @@
         "node": true
     },
     "extends": ["airbnb-base", "prettier"],
-    "overrides": [],
+
     "parserOptions": {
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
-    "rules": {}
+    "rules": {
+        "no-console": "off"
+    }
 }

@@ -1,6 +1,3 @@
-// // Declarar una funcion
-// function foo() {}
-
 // Otra maneta de export
 // export function bar() {
 //     const x = 22 * 2;

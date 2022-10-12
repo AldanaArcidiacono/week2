@@ -54,3 +54,23 @@ console.log(isNaN('22')); // Funcion global de JS. Suelto. Devuelve un boolean s
 console.log(isNaN('Pepe')); // Funcion global de JS. Suelto. Devuelve un boolean si encuentra un NaN
 console.log(Number.isNaN(0 / 0)); // Metodo del obj number. Enganchado a number. Le tienes que pasar un NaN para que devuelva un boolean. Mas usado cuando se hace una op. mat.
 console.log(Number.isNaN('Pepe')); // Metodo del obj number. Enganchado a number. Si lo que le pasas no es un numero, te dice false
+
+const a = 2;
+const str = '22';
+console.log(Number(str) + a);
+
+console.log(Boolean(false));
+console.log(Boolean(0));
+console.log(Boolean(-0));
+console.log(Boolean(NaN));
+console.log(Boolean(undefined));
+console.log(Boolean(null));
+console.log(Boolean(''));
+console.log(Number([]));
+console.log(Number({}));
+console.log(Number([1, 23]));
+console.log(Number(['13']));
+
+new Object();
+new Array();
+new Error();

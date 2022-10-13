@@ -16,12 +16,17 @@ describe('Testing add', () => {
         let b = 2;
         expect(add(a, b)).toBe('Error');
     });
+    test('If b = 0, return should be "Error', () => {
+        let a = 2;
+        let b = 0;
+        expect(add(a, b)).toBe('Error');
+    });
 });
 
 describe('Testing subtraction', () => {
-    test('If a = 2 and b = 2 the result should be', () => {
-        let a = 2;
-        let b = 2;
+    test('If a = 8 and b = 5 the result should be', () => {
+        let a = 8;
+        let b = 5;
         expect(subtraction(a, b)).toBe(0);
     });
 });

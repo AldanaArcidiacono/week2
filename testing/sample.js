@@ -1,5 +1,5 @@
 export function add(a, b) {
-    if (a === 0) {
+    if (a === 0 || b === 0) {
         return 'Error';
     }
     return a + b;

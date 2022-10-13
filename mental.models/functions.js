@@ -13,8 +13,8 @@ const obj = {
 };
 console.log(obj.name);
 
-const promp = 'name';
-console.log(obj[promp]);
+const prop = 'name';
+console.log(obj[prop]);
 
 const numbers = [3, 5, 6];
 console.log(numbers[0]);

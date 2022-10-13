@@ -21,33 +21,35 @@ describe('Testing subtraction', () => {
     });
 });
 
-describe('Testing subtraction', () => {
+describe('Testing division', () => {
     test('If a = 4 and b = 2 add should be', () => {
         let a = 4;
         let b = 2;
         expect(division(a, b)).toBe(2);
     });
-    test('If a = 0, return should be "Error', () => {
-        let a = 0;
-        let b = 2;
-        expect(() => {
-            division(a, b);
-        }).toThrow();
-    });
-    test('If b = 0, return should be "Error"', () => {
+    test('If b = 0, should throw an "Error"', () => {
         let a = 2;
         let b = 0;
         expect(() => {
             division(a, b);
         }).toThrow();
     });
-    test('If a = null, return should be "Error"', () => {
+    test('If a = null, should throw an "Error"', () => {
         let a = null;
         let b = 5;
         try {
             division(a, b);
         } catch (e) {
-            expect(e.message).toBe('Parametro no validos');
+            expect(e.message).toBe('Error: Parámetros no válidos');
+        }
+    });
+    test('If a = pepe, should throw an "Error"', () => {
+        let a = 'pepe';
+        let b = 5;
+        try {
+            division(a, b);
+        } catch (e) {
+            expect(e.message).toBe('Error: Parámetros no válidos');
         }
     });
 });

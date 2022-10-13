@@ -1,7 +1,7 @@
 export function add(a, b) {
-    if (a === 0 || b === 0) {
-        return 'Error';
-    }
+    // if (a === 0 || b === 0) {
+    //     return 'Error';
+    // }
     return +a + Number(b);
 }
 
@@ -11,7 +11,7 @@ export function subtraction(a, b) {
 
 export function division(a, b) {
     const zeroError = new Error('No se puede dividir por cero');
-    const paramError = new Error('Parametro no validos');
+    const paramError = new Error('Error: Parámetros no válidos');
     if (a === 0 || b === 0) {
         throw zeroError;
     }
